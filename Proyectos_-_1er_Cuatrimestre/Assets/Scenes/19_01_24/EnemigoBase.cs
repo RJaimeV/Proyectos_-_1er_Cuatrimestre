@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class EnemigoBase : PersonajeBase
 {
-    private float damage = 450f;
+    protected float damage = 450f;
     public float getDamage() { return damage; }
 }

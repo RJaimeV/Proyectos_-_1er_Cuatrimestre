@@ -36,7 +36,7 @@ public class CadenaDeCaracteres : MonoBehaviour
                 pos = new Vector3(pos.x, pos.y, z);
             }
         }
-
+        FileSystem.Instance.CreateFile("Posiciones", ".save", position);
 
         Instantiate(prefab, pos, Quaternion.identity);
     }

@@ -19,8 +19,15 @@ public class Dog : Animal
         move();
     }
 
+    //Breif: This class is in charge of overriding the move method from
+    //the base class "Animal"
     public override void move()
     {
         base.move();
+    }
+
+    int Suma(int x, int y)
+    {
+        return 0;
     }
 }

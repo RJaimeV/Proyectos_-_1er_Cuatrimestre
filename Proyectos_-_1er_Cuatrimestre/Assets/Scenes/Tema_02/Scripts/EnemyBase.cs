@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo : MonoBehaviour
+public class EnemyBase : MonoBehaviour
 {
     /*
-     * GAMELOOP
-     * Int(); o Start();
-     * Update
-     * Render()
-     * Destroy
-     */
-    
+       * GAMELOOP
+       * Init(); o Start();
+       * Update()
+       * Render()
+       * Destroy
+       */
+
     [SerializeField]
     protected string Name = "Enemy";
     [SerializeField]
@@ -20,13 +20,14 @@ public class Enemigo : MonoBehaviour
     protected List<string> Loot;
 
     /// <summary>
-    /// This method is in change of intitializing the nombers of the class
+    /// This method is in change of intitializing the members of the class
     /// </summary>
 
     public virtual void Init()
     {
         Loot = new List<string>();
     }
+
     public virtual void AddLoot(string Item)
     {
         Loot.Add(Item);
